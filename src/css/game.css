@@ -1,0 +1,60 @@
+/*Window will be 900px wide by 300px in height*/
+
+
+
+.info-panel {
+  min-height: 130px;
+  box-shadow: 3px 3px 3px grey;
+  border: 1px solid black;
+  border-radius:15px;
+}
+
+.avatar-box {
+  border: 1px solid black;
+
+  min-width: 75px;
+  min-height: 75px;
+
+  max-width: 75px;
+  max-height: 75px;
+
+  margin: 5px;
+  margin-left: 0px;
+
+}
+
+.thumbnail {
+  min-width: 70px;
+  max-width: 70px;
+
+  min-height: 70px;
+  max-height: 70px;
+
+  margin: 2px;
+}
+
+.energy-table {
+  border: 1px solid black;
+  margin-left: 15px;
+
+  min-height: 100px;
+}
+
+.avatar-margin-left {
+  margin-left: 15px;
+}
+
+.avatar-handle {
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.timer {
+  padding-left: 50px;
+}
+.progress-bar {
+  min-height: 20px;
+  min-width: 200px;
+  border: solid 1px black;
+  background-color: green;
+}

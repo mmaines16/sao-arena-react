@@ -3,7 +3,7 @@
 
 
 .info-panel {
-  min-height: 130px;
+  min-height: 140px;
   box-shadow: 3px 3px 3px grey;
   border: 1px solid black;
   border-radius:15px;
@@ -38,6 +38,35 @@
   margin-left: 15px;
 
   min-height: 100px;
+  max-height: 110px;
+
+  padding-top: 0%;
+  padding-bottom: 3%;
+
+
+}
+
+.energy-table-btn {
+  max-height: 20px;
+  font-size: 11px;
+  padding-top: .5%;
+}
+
+.energy-table-row {
+  min-height: 20px;
+  max-height: 20px;
+  border: solid 1px black;
+  width: 60%;
+  margin-left: 20%;
+
+  padding-top: 2px;
+}
+
+.energy-table-btn-container {
+  min-height: 20px;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5px;
 }
 
 .avatar-margin-left {
@@ -51,10 +80,37 @@
 
 .timer {
   padding-left: 50px;
+  padding-top: 2px;
 }
 .progress-bar {
   min-height: 20px;
   min-width: 200px;
   border: solid 1px black;
   background-color: green;
+}
+
+.energy {
+  min-width: 15px;
+  min-height: 15px;
+
+  max-width: 15px;
+  max-height: 15px;
+
+  border: solid 1px black;
+}
+
+.green {
+  background-color: #00ff00;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
 }

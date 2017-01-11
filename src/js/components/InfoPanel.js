@@ -1,5 +1,6 @@
 import React from "react";
 import AvatarBox from "./InfoPanel/AvatarBox";
+import EnergyTable from "./EnergyTable"
 
 export default class InfoPanel extends React.Component {
   render() {
@@ -10,7 +11,7 @@ export default class InfoPanel extends React.Component {
             <AvatarBox />
           </div>
           <div class="col-md-7 container">
-            <div class="energy-table energy-table-margin-left"></div>
+            <EnergyTable />
           </div>
           <div class="col-md-2">
             <AvatarBox />

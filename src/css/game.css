@@ -1,4 +1,4 @@
-/*Window will be 900px wide by 300px in height*/
+/*Window will be 900px wide by 255px in height*/
 
 
 
@@ -32,6 +32,70 @@
   max-height: 70px;
 
   margin: 2px;
+}
+
+
+.thumbnail-large {
+  min-width: 90px;
+  max-width: 90px;
+
+  min-height: 90px;
+  max-height: 90px;
+
+  background-color: grey;
+}
+
+.thumbnail-skill {
+  border-radius: 40px;
+  min-height: 80px;
+  max-height: 80px;
+
+  min-width: 80px;
+  max-width: 80px;
+
+  background-color: white;
+}
+
+.thumbnail-effect {
+  min-height: 20px;
+  max-height: 20px;
+
+  min-width: 20px;
+  max-width: 20px;
+
+  margin-right: 2px;
+
+  background-color: white;
+
+  display: inline-flex;
+}
+
+.thumbnail-opponent {
+  margin-left: -55px;
+}
+
+.divider {
+  margin-left: 30px;
+}
+
+.thumbnail-effect-inverse {
+  min-height: 20px;
+  max-height: 20px;
+
+  min-width: 20px;
+  max-width: 20px;
+
+  margin-left: 2px;
+
+  background-color: white;
+
+  display: inline-flex;
+}
+
+.effect-stacked{
+  text-align: center;
+  padding-left: 10%;
+  margin-top: 0px;
 }
 
 .energy-table {
@@ -71,7 +135,7 @@ energy-table-large {
 
 .energy-table-btn-container {
   min-height: 20px;
-  width: 60%;
+  width: 65%;
   margin-left: 20%;
   margin-top: 5px;
 }
@@ -161,10 +225,10 @@ energy-table-large {
 
 .modal {
   position: fixed;
-  top: 110px;
+  top: 40px;
   left: 160px;
   right: 160px;
-  bottom: 100px;
+  bottom: 60px;
   border: 1px solid black;
   background-color: #F5F5F5;
   overflow: auto;
@@ -201,4 +265,106 @@ energy-table-large {
 
 .no-border {
   border: none;
+}
+
+.character-panel {
+  padding-top: 8px;
+  padding-left: 10px;
+}
+
+.opponent-panel {
+  padding-top: 8px;
+  padding-right: 10px;
+}
+
+.health-bar {
+  position: relative;
+  width: 100px;
+  height: 15px;
+  background-color: #808080;
+  z-index: 1;
+   box-shadow: 5px 5px 2px #bfbfbf;
+   border-radius: 15px;
+   margin: 2px;
+   margin-left: -5px;
+}
+
+.health-bar-percent {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: #4CAF50;
+  z-index: 3;
+  border-radius: 15px;
+  margin: 0px;
+}
+
+.health-bar-label {
+  position: absolute;
+  padding-left: 35px;
+  padding-top: 1px;
+  text-align: center;
+  line-height: 14px;
+  color: #e6e6e6;
+  text-shadow: 1px 1px black;
+  font-size: 11px;
+}
+
+.effect-rack {
+  min-height: 25px;
+  max-height: 25px;
+
+  padding: 2px;
+
+  width: 100%;
+
+  background-color: grey;
+}
+
+.effect-rack-inverse {
+  min-height: 25px;
+  max-height: 25px;
+
+  padding: 2px;
+
+  width: 100%;
+
+  background-color: grey;
+}
+
+.skill-rack {
+  min-height: 85px;
+  max-height: 85px;
+
+  width: 100%;
+
+  padding: 2px;
+  margin-top: 2px;
+
+  background-color: #333;
+}
+
+.test {
+  margin-top: 5px;
+  min-height: 120px;
+}
+
+.test2 {
+  margin-top: 5px;
+  min-height: 130px;
+  background-color: #333;
+}
+
+.test3 {
+  border: 1px solid black;
+}
+
+.rack-container {
+  padding-left: 30px;
+}
+
+.rack-container-inverse {
+  padding: 20px;
+  padding-top: 0px;
+  padding-right: 30px;
 }

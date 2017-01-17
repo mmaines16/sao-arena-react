@@ -1,6 +1,6 @@
 import React from "react";
 import AvatarBox from "./InfoPanel/AvatarBox";
-import EnergyTable from "./EnergyTable"
+import EnergyTable from "./InfoPanel/EnergyTable"
 
 export default class InfoPanel extends React.Component {
   render() {

@@ -11,7 +11,7 @@ export default class OpponentPanel extends React.Component {
   }
 
   render() {
-    setTimeout(() => {this.setState({health: 28})}, 2000);
+    setTimeout(() => {this.setState({health: 28})}, 5000); //Debugging
 
     return (
       <div class="row opponent-panel">
@@ -26,7 +26,7 @@ export default class OpponentPanel extends React.Component {
 
         <div class="col-md-2 thumbnail-opponent">
           <div class="thumbnail-large"></div>
-          <HealthBar percent={this.state.health}/>
+          <HealthBar percent={this.state.health} intervalTime={200}/>
         </div>
 
 

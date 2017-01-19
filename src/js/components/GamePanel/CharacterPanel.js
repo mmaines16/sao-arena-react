@@ -12,7 +12,7 @@ export default class CharcaterPanel extends React.Component {
 
 
   render() {
-
+    setTimeout(() => {this.setState({health: 55})}, 3000); //Debugging
     return (
       <div class="row character-panel">
         <div class="col-md-2">

@@ -1,5 +1,7 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import HealthBar from "./CharacterPanel/HealthBar";
+import Skill from "./CharacterPanel/Skill";
 
 export default class CharcaterPanel extends React.Component {
   constructor() {
@@ -9,14 +11,21 @@ export default class CharcaterPanel extends React.Component {
       health: 80,
     };
   }
+  
+  onCharacterImageClick = () => {
+    var thumbnail = ReactDOM.findDOMNode(this).getElementsByClassName("thumbnail-large")[0];
+    console.log('Character Thumbnail Selected');
+    console.log(thumbnail);
+  }
 
 
   render() {
-    setTimeout(() => {this.setState({health: 55})}, 3000); //Debugging
+    window.characters.push(this); //debug
+
     return (
       <div class="row character-panel">
         <div class="col-md-2">
-          <div class="thumbnail-large"></div>
+          <div class="thumbnail-large character-image" onClick={this.onCharacterImageClick}></div>
           <HealthBar percent={this.state.health}/>
         </div>
 
@@ -28,25 +37,10 @@ export default class CharcaterPanel extends React.Component {
 
           <div class="row skill-rack">
 
-            <div class="col-md-3 skill">
-              <div class="thumbnail-skill">
-              </div>
-            </div>
-
-            <div class="col-md-3 skill">
-              <div class="thumbnail-skill">
-              </div>
-            </div>
-
-            <div class="col-md-3 skill">
-              <div class="thumbnail-skill">
-              </div>
-            </div>
-
-            <div class="col-md-3 skill">
-              <div class="thumbnail-skill">
-              </div>
-            </div>
+            <Skill character={this}/>
+            <Skill character={this}/>
+            <Skill character={this}/>
+            <Skill character={this}/>
 
           </div>
         </div>

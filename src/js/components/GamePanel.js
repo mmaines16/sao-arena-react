@@ -4,6 +4,9 @@ import OpponentPanel from "./GamePanel/OpponentPanel";
 
 export default class GamePanel extends React.Component {
   render() {
+    window.characters = []; //debug
+    window.opponents = []; //debug
+
     return (
       <div class="container GamePanel">
         <div class="row">

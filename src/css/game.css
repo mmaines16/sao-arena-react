@@ -45,6 +45,10 @@
   background-color: grey;
 }
 
+.selected {
+  border: yellow solid 3px;
+}
+
 .thumbnail-skill {
   border-radius: 40px;
   min-height: 80px;
@@ -90,6 +94,26 @@
   background-color: white;
 
   display: inline-flex;
+}
+
+.thumbnail-detail-panel {
+  min-height: 110px;
+  min-width: 110px;
+
+  max-height: 110px;
+  max-width: 110px;
+
+  background-color: white;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.detail-panel-info {
+  min-height: 110px;
+
+  max-height: 110px;
+
+  background-color: white;
 }
 
 .effect-stacked{
@@ -281,7 +305,7 @@ energy-table-large {
   position: relative;
   width: 100px;
   height: 15px;
-  background-color: #808080;
+  background-color: #b0b0b0;
   z-index: 1;
    box-shadow: 5px 5px 2px #bfbfbf;
    border-radius: 15px;
@@ -301,11 +325,11 @@ energy-table-large {
 
 .health-bar-label {
   position: absolute;
-  padding-left: 35px;
+  padding-left: 30px;
   padding-top: 1px;
   text-align: center;
   line-height: 14px;
-  color: #e6e6e6;
+  color: black;
   text-shadow: 1px 1px black;
   font-size: 11px;
 }
@@ -351,16 +375,28 @@ energy-table-large {
 
 .test2 {
   margin-top: 5px;
-  min-height: 130px;
+  min-height: 125px;
   background-color: #333;
+  padding: 4px;
+  padding-left: 15px;
 }
 
 .test3 {
   border: 1px solid black;
 }
 
+.test4 {
+  background-color: #999;
+  min-height: 115px;
+  padding: 5px;
+}
+
 .rack-container {
   padding-left: 30px;
+}
+
+.btn-list {
+  list-style-type: none;
 }
 
 .rack-container-inverse {

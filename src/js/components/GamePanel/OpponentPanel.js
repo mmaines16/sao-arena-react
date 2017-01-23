@@ -11,7 +11,7 @@ export default class OpponentPanel extends React.Component {
   }
 
   render() {
-    setTimeout(() => {this.setState({health: 28})}, 5000); //Debugging
+    window.opponents.push(this);
 
     return (
       <div class="row opponent-panel">

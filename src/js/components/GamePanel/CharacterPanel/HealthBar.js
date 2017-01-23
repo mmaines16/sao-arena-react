@@ -21,35 +21,36 @@ export default class HealthBar extends React.Component {
   function frame() {
     if (width == amount) {
       clearInterval(id);
-      console.log("width == amount");
     }
     else {
 
       if(width > amount)
       {
-          console.log("width > amount: " + width + " > " + amount);
           width--;
           elem.style.width = width + '%';
-          label.innerHTML = width * 1  +     '%';  }
+          label.innerHTML = width * 1  +     '/100';  }
       else
       {
           width++;
           elem.style.width = width + '%';
-          label.innerHTML = width * 1  +     '%';
+          label.innerHTML = width * 1  +     '/100';
       }
 
   	  if(width < 31)
   	  {
 
   		elem.style.backgroundColor = "#ff0000";
+      label.style.color = 'black';
   	  }
   	  else if(width < 80)
   	  {
   		elem.style.backgroundColor = "#ffff00";
+      label.style.color = 'black';
   	  }
   	  else
   	  {
   		elem.style.backgroundColor = "#4CAF50";
+      label.style.color = 'black';
   	  }
 
     }
@@ -72,7 +73,7 @@ export default class HealthBar extends React.Component {
       <div class="health-bar">
         <div class="health-bar-percent">
           <div class="health-bar-label">
-            {this.props.percent + "%"}
+            {this.props.percent + "/100"}
           </div>
         </div>
       </div>
